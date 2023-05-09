@@ -1,0 +1,54 @@
+:host{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+table,td{
+    border: 1px solid black;
+    width: 100%;
+}
+table{
+    cursor: pointer;
+}
+td{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.mini-game{
+    margin-top: 50px;
+}
+.game-table{
+    margin-top: 12px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.score{
+    display: flex;
+    justify-content: center;
+
+}
+.score, p:first-child{
+    margin-right: 12px;
+}
+.game-settings, input {
+    margin-right: 12px;
+}
+button{
+    color: #1E88E5;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    border: 2px solid #1E88E5;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+button:hover, button:focus{
+    background-color: #1E88E5;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}

@@ -1,0 +1,29 @@
+:host{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 30%;
+    background-color: #C6E2FF;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+      
+}
+
+.card-header, 
+.card-body{
+    text-align: center;
+}
+.card-header, p{
+    margin-top: 0;
+}
+.card-content{
+    padding: 12px;
+}
+.modal-card{
+    text-align: end;
+}
+button{
+    border: none;
+    background-color: transparent;
+
+}

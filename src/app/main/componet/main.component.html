@@ -1,0 +1,24 @@
+<div class="container">
+    <modal [computerScore]="computerScore" [playerScore]="playerScore" *ngIf="showModal" (close)="modalClose()"></modal>
+    <div class="mini-game">
+        <div class="game-settings" *ngIf="!gameStarted">
+            <form [formGroup]="gameSettings">
+                <p>Введiть час таймеру(мiлiсекундах): </p>
+                <input formControlName="timer">
+                <button (click)="random(tableColumns)"  [disabled]="gameSettings.invalid">Почати</button>
+            </form>
+        </div>
+        <div class="score" *ngIf="gameStarted">
+            <p>Гравець: {{playerScore}}</p>
+            <p>Комп'ютер: {{computerScore}}</p>
+        </div>
+        <div class="game-table">
+            <table>
+                <tr *ngFor="let colums of tableColumns">
+                    <td *ngFor="let rows of colums" [ngStyle]="{'background-color': rows.color}" (click)="onCellClick(rows)"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
